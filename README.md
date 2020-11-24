@@ -1,1 +1,1 @@
-# test-bot
+# mno_bot
