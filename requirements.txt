@@ -1,5 +1,7 @@
 discord.py
+discord.py[voice]
 aiohttp
 requests
 websockets
 chardet
+ffmpeg
