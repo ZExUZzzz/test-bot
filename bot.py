@@ -38,7 +38,7 @@ def apexapirequest(whois):
     try:
         player = requests.get(
             'https://public-api.tracker.gg/v2/apex/standard/profile/origin/'+whois,
-            params={'TRN-Api-Key': 'e8072754-58a4-4c23-9663-de9d1feeee88'}).json()
+            params={'TRN-Api-Key': '''"API KEY FOR REQUEST"'''}).json()
 
         player = player['data']
         player_stats = player['segments'][0]['stats']
@@ -91,7 +91,7 @@ async def Привет(ctx):
 
 @Bot.command()
 async def Reboot(ctx):
-    await ctx.send(f'Анус себе ребутни, пёс')
+    await ctx.send(f'Себя ребутни, пёс')
 
 @Bot.command()
 async def SudoReboot(ctx):
@@ -101,7 +101,7 @@ async def SudoReboot(ctx):
 
 @Bot.command()
 async def reboot(ctx):
-    await ctx.send(f'Анус себе ребутни, пёс')
+    await ctx.send(f'Себя ребутни, пёс')
 
 @Bot.command()
 async def DieStupiudBot(ctx):
@@ -148,7 +148,7 @@ async def on_voice_state_update(member, before, after):
     member = str(member)
     before = str(before).split(' ')
     after = str(after).split(' ')
-    channel_message = Bot.get_channel(777477363847921677)
+    channel_message = Bot.get_channel('''"СЮДА ВСТАВИТЬ КАНАЛ"''')
     if before[4][8:] == 'None>':
         channel_input_output = Bot.get_channel(int(after[5][3:]))
         await channel_message.send(member[0:-5]+' зашёл на канал ' + channel_input_output.name)
@@ -156,8 +156,4 @@ async def on_voice_state_update(member, before, after):
         channel_input_output = Bot.get_channel(int(before[5][3:]))
         await channel_message.send(member[0:-5] + ' покинул канал ' + channel_input_output.name)
 
-Bot.run('Nzc3Nzc2ODA2MTEwOTUzNDc0.X7IXGA.DPnSs0ytPtLznRgSokB6y8okdCQ')
-
-#Keyes:
-#Nzc3Nzc2ODA2MTEwOTUzNDc0.X7IXGA.DPnSs0ytPtLznRgSokB6y8okdCQ TESTBOTSERVER
-#Nzc3NDc2NjU5NjExODI4MjM1.X7D_kA.FGxXfHPnWSIqUWBshGqXlDObHbs MNO_BOT
+Bot.run('''"Сюда вставить ключ бота"''')
